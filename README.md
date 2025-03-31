@@ -1,1 +1,1 @@
-This reop contains all my projects
+This REPO contains all my projects

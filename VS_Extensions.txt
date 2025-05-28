@@ -1,0 +1,21 @@
+1-Auto Rename Tag
+2-Better Comments
+3-Bookmarks
+4-Bracket Pair Colorization toggler
+5-Code Spell Checker
+6-Discord Presence
+7-Draw.io Integration
+8-Error Lens
+9-GitHub Copilot
+10-GitHub Copilot Chat
+11-Github Theme
+12-Image preview
+13-Live Server
+14-Material Icons Theme
+15-Multiple cursor case preserve
+16-Power Mode
+17-Prettier - Code formatter
+18-Pylance
+19-Python Debugger
+20-VS Code Speech
+21-Code Runner

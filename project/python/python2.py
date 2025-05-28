@@ -1,6 +1,0 @@
-name = input("type your name hear: ")
-print()
-print(f"Hello {name}")
-print()
-gmail = input("Type your gmail hear: ")
-print(f"Your gmail is: {gmail}")

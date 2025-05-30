@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table</title>
+        <style>
+            body{
+                background-color:black;
+                color:white;
+            }
+            table{
+                width:100%;
+            }
+            table, tr, td, th{
+                border: solid 1px white;
+                border-collapse:collapse;
+            }
+            .Moro_tr, .Oda_tr, .Xpld_tr{
+                height:25px;
+            }
+            caption{
+                text-align:center;
+                width:fit-content;
+                margin:auto
+            }
+            h1{
+                text-align:center;
+            }
+            .table_style > tbody > tr > td{
+                padding:10px;
+                border-collapse:collapse;
+            }
+            td:hover, th:hover{
+                background-color:powderblue
+            }
+        </style>
+    </head>
+    <br>
+        <h1>Tables</h1>
+        <hr>
+        <br>
+        <h2 class="table1_h2">Table1</h2>
+        <table class="table1">
+            <caption style="border:solid">Table1</caption>
+            <tr style="height:50px">
+                <th style="width:25%">Name</th>
+                <th style="width:25%">Age</th>
+                <th style="width:25%">Skill</th>
+                <th style="width:25%">Real Name</th>
+            </tr class="Moro_tr">
+            <tr style="height:25px">
+                <td>Moro</td>
+                <td>16</td>
+                <td>Front-End</td>
+                <td>Amar</td>
+            </tr>
+            <tr class="Oda_tr">
+                <td>Oda</td>
+                <td>14</td>
+                <td>Full-Stack</td>
+                <td>Adam</td>
+            </tr>
+            <tr class="Xpld_tr">
+                <td>Xpld</td>
+                <td>14</td>
+                <td>3D Artist</td>
+                <td>Omar</td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr>
+        <br/>
+        <table class="table2">
+            <caption style="border:solid">Table2</caption>
+            <tr>
+                <th style="width:100px">Name</th>
+                <td>Moro</td>
+                <td>Oda</td>
+                <td>Xpld</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>16</td>
+                <td>14</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <th>Skill</th>
+                <td>Front-End</td>
+                <td>Full-Stack</td>
+                <td>3D Artist</td>
+            </tr>
+            <tr>
+                <th>Real Name</th>
+                <td>Amar</td>
+                <td>Adam</td>
+                <td>Omar</td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr>
+        <br/>
+        <h1>Table Styles</h1>
+        <br/>
+        <hr>
+        <br/><br/>
+        <div></div>
+        <table class="table_style">
+            <caption style="border:solid">Solid</caption>
+            <tr style="border:solid;">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:solid;">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:solid">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr/>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:dotted">Dotted</caption>
+            <tr style="border:dotted">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:dotted">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:dotted">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr/>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:dashed">Dashed</caption>
+            <tr style="border:dashed">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:dashed">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:dashed">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:double">Double</caption>
+            <tr style="border:double">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:double">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:double">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:groove">Groove</caption>
+            <tr style="border:groove">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:groove">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:groove">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr/>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:ridge">Ridge</caption>
+            <tr style="border:ridge">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:ridge">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:ridge">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:inset">Inset</caption>
+            <tr style="border:inset">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:inset">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:inset">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr/>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:outset">Outset</caption>
+            <tr style="border:outset">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:outset">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:outset">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr/>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:hidden">Hidden</caption>
+            <tr style="border:hidden">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:hidden">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:hidden">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <hr>
+        <br/><br/>
+        <table class="table_style">
+            <caption style="border:none">None</caption>
+            <tr style="border:none">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:none">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="border:none">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

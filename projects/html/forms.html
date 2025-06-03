@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Moro"/>
+        <meta name="description" content="practice in Html inputs"/>
+        <meta name="keywords" content="inputs, Moro, html"/>
+        <title>Inputs</title>
+    </head>
+    <body style="background-color:black;color:white" id="body">
+        <h1 style="text-align:center;">Inputs</h1>
+        <hr/>
+        <form style="width:300px;margin-left:35%" id="form">
+            <fieldset style="border:solid;margin-top:30px">
+                <legend>Login Form</legend>
+                <label for="username">Username:</label>
+                <input id="username" placeholder="example1010">
+                <br/>
+                <label for="pass">Password:</label>
+                <input style="margin-top:30px" id="pass" type="password">
+                <br/>
+                <label>Remember me</label>
+                <input style="margin-top:20px;margin-bottom:30px" type="checkbox" id="remember_me" onchange="show_hide()">
+                <button type="button" onclick="show()">Show</button>
+                <button type="button" onclick="hide()">Hide</button>
+                <br/>
+                <span style="margin-right:10px">Forgot Password?</span>
+                <a href="">Click here</a>
+                <br/>
+                <div style="margin-top:70px;margin-left:32%" id="control_div">
+                    <button type="button" id="right" onclick="control()">&rarr;</button>
+                    <button type="button" id="left">&larr;</button>
+                    <button type="button" id="up">&uarr;</button>
+                    <button type="button" id="down">&darr;</button>
+                </div>
+            </fieldset>    
+        </form>
+        <br/>
+        <hr/>
+        <br/>
+        <h2>Pick your background color:- </h2>
+        <form>
+            <input type="color" id="color_input" onchange="back_ground_color()">
+            <input type="radio" name="radio_color" id="radio_color_red" onclick="change_background_color()">
+            <label for="radio_color_red">Red</label>
+            <input type="radio" name="radio_color" id="radio_color_green" onclick="change_background_color()">
+            <label for="radio_color_green">Green</label>
+            <input type="radio" name="radio_color" id="radio_color_blue" onclick="change_background_color()">
+            <label for="radio_color_blue">Blue</label>
+            <input type="reset" id="input_reset" onclick="reset_background_color()">
+        </form>
+                <script>
+                /*First try and JavaScript code:-
+                function see_pass() {
+                    document.getElementById('pass').type= "text"
+                }
+                function hide(){
+                    document.getElementById('pass').type= "password"
+                }
+                */
+                function show_hide(){
+                    if (document.getElementById('remember_me').checked == true){
+                    document.getElementById('pass').type = "text"
+                    }
+                    else{
+                    document.getElementById('pass').type = "password"
+                    }
+                }   
+                function show(){
+                    document.getElementById('pass').type = "text"
+                }
+                function hide(){
+                    document.getElementById('pass').type = "password"
+                }
+                function back_ground_color(){
+                    document.getElementById('body').style.backgroundColor = document.getElementById('color_input').value;
+                }
+                function change_background_color(){
+                    if (document.getElementById('radio_color_red').checked === true) {
+                        document.getElementById('body').style.backgroundColor = "#ff0000";
+                    }
+                    else if (document.getElementById('radio_color_green').checked === true){
+                        document.getElementById('body').style.backgroundColor = "#00ff00";
+                    }
+                    else if (document.getElementById('radio_color_blue').checked === true){
+                        document.getElementById('body').style.backgroundColor = "#0000ff";
+                    }
+                }    
+                function reset_background_color(){
+                    document.getElementById('body').style.backgroundColor= document.getElementById('color_input').value
+                }
+                
+            </script>
+    </body>
+</html>

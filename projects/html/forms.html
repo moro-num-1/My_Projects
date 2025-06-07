@@ -11,14 +11,22 @@
     <body style="background-color:black;color:white" id="body">
         <h1 style="text-align:center;">Inputs</h1>
         <hr/>
-        <form style="width:300px;margin-left:35%" id="form">
+        <!--Login Form Section-->
+        <form style="width:300px;margin-left:35%" id="login_form">
             <fieldset style="border:solid;margin-top:30px">
                 <legend>Login Form</legend>
+                <!--Login Username section-->
                 <label for="username">Username:</label>
-                <input id="username" placeholder="example1010">
-                <br/>
-                <label for="pass">Password:</label>
-                <input style="margin-top:30px" id="pass" type="password">
+                <input style="margin-bottom:35px" id="username" placeholder="example1010">
+                <!--Login Email Section-->
+                <label style="margin-right:27px" for="input_email">Email:</label>
+                <input style="margin-bottom:35px" type="email" id="input_email" placeholder="example@gmail.com">
+                <!--Login Phone Number Section-->
+                <label style="margin-right:25px" for="phone_number">Phone:</label>
+                <input style="margin-bottom:35px" id="phone_number" type="tel">
+                <!--Login Password Section-->
+                <label for="pass" style="margin-right:5px">Password:</label>
+                <input id="pass" type="password">
                 <br/>
                 <label>Remember me</label>
                 <input style="margin-top:20px;margin-bottom:30px" type="checkbox" id="remember_me" onchange="show_hide()">
@@ -28,6 +36,19 @@
                 <span style="margin-right:10px">Forgot Password?</span>
                 <a href="">Click here</a>
                 <br/>
+                <div style="margin-left:30%;margin-top:50px">
+                    <input type="reset">
+                    <input type="submit">
+                </div>
+                <br/>
+                <br/>
+
+                <!--Size Section-->
+                <label for="width">Width</label>
+                <input style="width:30px;margin-right:30px" id="form_width" type="number" min="1" onchange="change_form_width()">
+                <label for="height">Height</label>
+                <input style="width:30px" id="form_height" type="number" min="1" onchange="change_form_height()">
+                <!--Login Control Section-->
                 <div style="margin-top:70px;margin-left:32%" id="control_div">
                     <button type="button" id="right" onclick="control()">&rarr;</button>
                     <button type="button" id="left">&larr;</button>
@@ -39,6 +60,7 @@
         <br/>
         <hr/>
         <br/>
+        <!--Changing Background Color Section-->
         <h2>Pick your background color:- </h2>
         <form>
             <input type="color" id="color_input" onchange="back_ground_color()">
@@ -50,47 +72,119 @@
             <label for="radio_color_blue">Blue</label>
             <input type="reset" id="input_reset" onclick="reset_background_color()">
         </form>
-                <script>
-                /*First try and JavaScript code:-
-                function see_pass() {
-                    document.getElementById('pass').type= "text"
+        <br/>
+        <hr/>
+        <!--Selecting Birthday Section-->
+        <label for="birthday">When is your birthday?</label>
+        <input id="birthday" type="date" onchange="change_birth_day()">
+        <label style="margin-left:50px" for="your_birthday">Your birthday is:</label>
+        <input id="your_birthday_input" type="text">
+        <hr/>
+        <br/>
+        <!--Selecting File Section-->
+        <label for="file">Choose the file:-</label>
+        <input id="file" type="file" onchange="change_file()">
+        <label for="chosen_file">Your chosen file is:</label>
+        <input id="chosen_file" type="text" >
+        <hr/>
+        <!--Selecting Input Section-->
+        <label for="select_input_menu">Select your input: </label>
+        <select id="select_input_menu" onchange="change_input()">
+            <option>Text</option>
+            <option>Password</option>
+            <option>Email</option>
+            <option>Tel</option>
+            <option>Reset</option>
+            <option>Submit</option>
+            <option>Button</option>
+            <option>File</option>
+            <option>Color</option>
+            <option>Date</option>
+        </select>
+        <input id="selected_input" style="margin-left:180px">
+        <hr/>
+        <!--Datalist Section-->
+        <label for="used_browser">What is the browser you're using?</label>
+        <input id="used_browser" list="browsers">
+        <datalist id="browsers">
+            <option>Chrome</option>
+            <option>Edge</option>
+            <option>Firefox</option>
+            <option>Opera</option>
+            <option>Brave</option>
+            <option>Safari</option>
+        </datalist>
+        <hr/>
+        <!--The Feedback Section-->
+        <label for="feedback">Give a feedback:</label>
+        <textarea id="feedback" rows="1">Your FeedBack:</textarea>
+        <hr/>
+        <p style="font-size:30px;margin-left:40%">Developer / MORO</p>
+        <script>
+            /*First try and JavaScript code:-
+            function see_pass() {
+                document.getElementById('pass').type= "text"
+            }
+            function hide(){
+                document.getElementById('pass').type= "password"
+            }
+            */
+
+            //Remember Me Button Script
+            function show_hide(){
+                if (document.getElementById('remember_me').checked == true){
+                document.getElementById('pass').type = "text"
                 }
-                function hide(){
-                    document.getElementById('pass').type= "password"
+                else{
+                document.getElementById('pass').type = "password"
                 }
-                */
-                function show_hide(){
-                    if (document.getElementById('remember_me').checked == true){
-                    document.getElementById('pass').type = "text"
-                    }
-                    else{
-                    document.getElementById('pass').type = "password"
-                    }
-                }   
-                function show(){
-                    document.getElementById('pass').type = "text"
+            }   
+            //Show Button Script
+            function show(){
+                document.getElementById('pass').type = "text"
+            }
+            //Hide Button Script
+            function hide(){
+                document.getElementById('pass').type = "password"
+            }
+            //Changing Background Script
+            function back_ground_color(){
+                document.getElementById('body').style.backgroundColor = document.getElementById('color_input').value;
+            }
+            function change_background_color(){
+                if (document.getElementById('radio_color_red').checked === true) {
+                    document.getElementById('body').style.backgroundColor = "#ff0000";
                 }
-                function hide(){
-                    document.getElementById('pass').type = "password"
+                else if (document.getElementById('radio_color_green').checked === true){
+                    document.getElementById('body').style.backgroundColor = "#00ff00";
                 }
-                function back_ground_color(){
-                    document.getElementById('body').style.backgroundColor = document.getElementById('color_input').value;
+                else if (document.getElementById('radio_color_blue').checked === true){
+                    document.getElementById('body').style.backgroundColor = "#0000ff";
                 }
-                function change_background_color(){
-                    if (document.getElementById('radio_color_red').checked === true) {
-                        document.getElementById('body').style.backgroundColor = "#ff0000";
-                    }
-                    else if (document.getElementById('radio_color_green').checked === true){
-                        document.getElementById('body').style.backgroundColor = "#00ff00";
-                    }
-                    else if (document.getElementById('radio_color_blue').checked === true){
-                        document.getElementById('body').style.backgroundColor = "#0000ff";
-                    }
-                }    
-                function reset_background_color(){
-                    document.getElementById('body').style.backgroundColor= document.getElementById('color_input').value
-                }
-                
-            </script>
+            }    
+            function reset_background_color(){
+                document.getElementById('body').style.backgroundColor= document.getElementById('color_input').value
+            }
+            //Birthday Script
+            function change_birth_day() {
+                document.getElementById('your_birthday_input').value = document.getElementById('birthday').value
+            }
+            /*Don't work for security reasons.
+            function change_file(){
+                document.getElementById('file').value = document.getElementById('chosen_file').value
+            }*/
+
+            //Change Input Script
+           function change_input(){
+            document.getElementById('selected_input').type = document.getElementById('select_input_menu').value
+           }
+           //Change Form Size Script
+           function change_form_width(){
+            document.getElementById('login_form').style.width = document.getElementById('form_width').value + "px"
+           }
+           function change_form_height(){
+            document.getElementById('login_form').style.height = document.getElementById('form_height').value + "px"
+           }
+        </script>
     </body>
 </html>

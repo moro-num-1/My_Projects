@@ -1,0 +1,31 @@
+p{
+    color:white;
+}
+body{
+    background:black;
+    color:black;
+}
+#header{
+    color:#ffffff;
+}
+#header, .articles{
+    text-align:center;
+}
+#article1{
+    background-color:#ff0000;
+}
+#article2{
+    background-color:#00ff00;
+}
+#article3{
+    background-color:#0000ff;
+}
+#article1 p{
+    font-family:'Courier New', Courier, monospace
+}
+#article2 p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#article3 p {
+    font-family:'Times New Roman', Times, serif
+}

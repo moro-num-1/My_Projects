@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="MORO" />
+        <meta name="keywords" content="MORO, HSL, HTML, CSS, JS, Web" />
+        <meta name="description" content="This project is about making input in which the user can specify a HSL color value for the web background" />
+        <link rel="stylesheet" href="hsl.css" />
+        <title>HSL</title>
+        <style></style>
+        <script></script>
+    </head>
+    <body>
+        <h1>HSL input</h1>
+        <hr/>
+        <form>
+            <p>
+                Enter the HSL color value for your page background:
+                (<input type="number" id="h" class="hsl_width" value="0" oninput="change_color()" min="0" max="360"/>,
+                <input type="number" id="s" class="hsl_width" oninput="change_color()" value="50" min="0" max="100"/>%,
+                <input type="number" id="l" class="hsl_width" oninput="change_color()" value="50" min="0" max="100"/> %)
+            </p>
+
+        </form>
+        <script>
+            function change_color(){
+                let h = parseInt(document.getElementById('h').value)
+                let s = parseInt(document.getElementById('s').value)
+                let l = parseInt(document.getElementById('l').value)
+                document.body.style.backgroundColor = `hsl(${h}, ${s}%, ${l}%)`
+            }
+        </script>
+    </body>
+</html>

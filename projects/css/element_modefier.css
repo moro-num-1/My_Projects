@@ -4,4 +4,4 @@ h1{text-align:center;}
 #h_span{color:hsl(0, 100%, 50%)}
 #s_span{color:hsl(120, 100%, 50%)}
 #l_span{color:hsl(240, 100%, 50%)}
-#author{float:right}
+#author{float:right;font-weight:bold;margin-top:0;}

@@ -1,3 +1,6 @@
 body{background-color:#000;color:#fff;}
 h1{text-align:center;}
 .hsl_width{width:40px}
+#h_span{color:hsl(0, 100%, 50%)}
+#s_span{color:hsl(120, 100%, 50%)}
+#l_span{color:hsl(240, 100%, 50%)}

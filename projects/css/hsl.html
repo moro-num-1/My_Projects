@@ -14,6 +14,8 @@
     <body>
         <h1 id="h1"><span id="h_span">H</span><span id="s_span">S</span><span id="l_span">L</span> input</h1>
         <hr id="hr"/>
+
+        <!--Available elements to modify-->
         <form>
             <label for="select">Enter the element you'd modify its properties:</label>
             <select id="select_element" onchange="change_element()">
@@ -24,31 +26,28 @@
             </select>
             <br/>
             <br/>
+            <!--Available elements to modify-->
             <label for="select_property" id="select_property_label">Enter the property you'd change its color:</label>
-            <select id="select_property">
+            <select id="select_property" onchange="change_property()">
                 <option>border</option>
                 <option>background</option>
                 <option>text</option>
-                <option>row</option>
             </select>
-            <p id="">
+            <p>
+                <!--HSLA inputs-->
                 Enter the HSL color value for your background:
-                (<input type="range" id="h" class="hsl_width" value="0" oninput="change_color()" min="0" max="360"/>,
+                (<input type="range" id="h" class="hsl_width"oninput="change_color()" value="0" oninput="change_color()" min="0" max="360"/>,
                 <input type="range" id="s" class="hsl_width" oninput="change_color()" value="100" min="0" max="100"/>%,
                 <input type="range" id="l" class="hsl_width" oninput="change_color()" value="50" min="0" max="100"/> %
                 <input type="range" id="a" class="hsl_width" oninput="change_color()" value="1.0" min="0" max="1.0" step="0.1">)
+                
             </p>
 
         </form>
         <script>
-            //HSLA values
-            
+
             function change_element(){
-                let h = parseInt(document.getElementById('h').value)
-                let s = parseInt(document.getElementById('s').value)
-                let l = parseInt(document.getElementById('l').value)
-                let a = parseFloat(document.getElementById('a').value)
-                let hsla = `hsla(${h}, ${s}%, ${l}%, ${a})`
+                
                 //Element Variables
                 let element = document.getElementById('select_element')
                 let property = document.getElementById('select_property')
@@ -72,12 +71,9 @@
                     body.style.border = "none"
                     property.style.display = "inline"
                     property_label.style.display = "inline"
-                    if (property_value == "background"){
-                        h1.style.backgroundColor = `${hsla}`
-                    }
                 }
-                //If User Selects The Row
-                else if (element_value == "row"){
+                    //If User Selects The Row
+                    else if (element_value == "row"){
                     hr.style.border = "solid 2px green"
                     body.style.border = "none"
                     h1.style.border = "none"
@@ -86,13 +82,58 @@
                 }
                 //If User Selects None Element
                 else if (element_value == "none"){
-                    body.style.border = "none"
-                    h1.style.border = "none"
                     property.style.display = "none"
                     property_label.style.display = "none"
+                    body.style.border = "none"
+                    h1.style.border = "none"
                 }
-
             }
+            //I don't know what even that do
+            function change_property(){
+                change_color()
+            }
+            //Change color function
+            function change_color(){
+                //element variables
+                let element = document.getElementById('select_element')
+                let property = document.getElementById('select_property')
+                let property_label = document.getElementById('select_property_label')
+                let element_value = document.getElementById('select_element').value
+                let property_value = document.getElementById('select_property').value
+                let body = document.body
+                let h1 = document.getElementById('h1')
+                let hr = document.getElementById('hr')
+                //HSLA values
+                
+                let h = parseInt(document.getElementById('h').value)
+                let s = parseInt(document.getElementById('s').value)
+                let l = parseInt(document.getElementById('l').value)
+                let a = parseFloat(document.getElementById('a').value)
+                let hsla = `hsla(${h}, ${s}%, ${l}%, ${a})`
+                
+                //Change the selected element color
+                let dom_element
+                if (element_value == "body"){
+                    dom_element = document.body;
+                }
+                else if (element_value == "h1"){
+                    dom_element = document.getElementById('h1')
+                }
+                else if (element_value == "row"){
+                    dom_element = document.getElementById('hr')
+                }
+                if (property_value == "background"){
+                    dom_element.style.backgroundColor = hsla;       
+                }
+                else if (property_value == "border"){
+                    dom_element.style.borderColor = hsla;
+
+                }
+                else if (property_value == "text"){
+                    dom_element.style.color = hsla;
+                }   
+            }
+
         </script>
     </body>
 </html>

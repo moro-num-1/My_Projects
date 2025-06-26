@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Manufacturing+Consent&family=Roboto+Slab:wght@100..900&display=swap');
 *{
     margin: 0px;
     box-sizing: border-box;
@@ -6,6 +7,7 @@
 
 body{
     background-color: #000;
+    font-family: "roboto";
 }
 
 main{
@@ -14,7 +16,7 @@ main{
     color: #fff;
     width: 500px;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 15%;
     text-align: center;
     border: 2px solid powderblue;
 }
@@ -25,11 +27,21 @@ main > section:first-of-type > p{
 }
 
 main > section:nth-of-type(2) >p{
-    background-color: hsl(120, 50%, 50%);
+    background-color: hsl(155, 89%, 25%);
     text-decoration: overline;
 }
 
 main > section:last-of-type p{
     background-color: #00f;
     text-decoration: line-through;
+}
+header h1{
+    font-family: "Doto";
+}
+section h1{
+    font-family: "Roboto Slab"
+}
+section > p{
+    font-family: "Manufacturing Consent";
+    font-size: 30px;
 }

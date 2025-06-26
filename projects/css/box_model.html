@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="MORO"/>
+    <meta name="keywords" content="MORO, HTML, CSS, messing_around"/>
+    <meta name="description" content="I'm messing around with CSS in this project"/>
+    <title>Messing around with CSS</title>
+    <link rel="stylesheet" href="box_model.css"/>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <div id="container">
+        <div id="margin">
+            <p id="margin_label">margin</p>
+            <div id="border">
+                <p id="border_label">border</p>
+                <div id="padding">
+                    <p id="padding_label">padding</p>
+                    <div id="content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="controls">
+        <button type="button" id="uarr" class="control" onclick="control='uarr'; change_margin()">&uarr;</button>
+        <br/>
+        <button type="button" id="larr" class="control" onclick="control='larr'; change_margin()">&larr;</button>
+        <button type="button" id="rarr" class="control" onclick="control='rarr'; change_margin()">&rarr;</button>
+        <br/>
+        <button type="button" id="darr" class="control" onclick="control='darr'; change_margin()">&darr;</button>
+    </div>
+
+    <script>
+        const larr = document.getElementById('larr')
+        const rarr = document.getElementById('rarr')
+        const uarr = document.getElementById('uarr')
+        const darr = document.getElementById('darr')
+        const controls = document.getElementById('controls')
+        const container = document.getElementById('container')
+        
+        // Declare globally to change it via onclick inline
+        var control = ""
+
+        function change_margin() {
+            const computedStyle = window.getComputedStyle(container)
+            const marginTop = parseInt(computedStyle.marginTop)
+            const marginBottom = parseInt(computedStyle.marginBottom)
+            const marginLeft = parseInt(computedStyle.marginLeft)
+            const marginRight = parseInt(computedStyle.marginRight)
+
+            const step = 10
+
+            if (marginBottom === 10 && control === "darr") {
+                const currentControlsMarginTop = parseInt(window.getComputedStyle(controls).marginTop) || 0
+                controls.style.marginTop = (currentControlsMarginTop + step) + "px"
+            }
+            
+            if (control === "larr") {
+                container.style.marginLeft = (marginLeft - step) + "px"
+            } else if (control === "rarr") {
+                container.style.marginLeft = (marginLeft + step) + "px"
+            } else if (control === "uarr") {
+                container.style.marginTop = (marginTop - step) + "px"
+            } else if (control === "darr") {
+                container.style.marginTop = (marginTop + step) + "px"
+            }
+        }
+    </script>
+</body>
+</html>

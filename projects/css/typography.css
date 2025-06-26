@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+body{
+    background-color: #000;
+}
+
+main{
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    width: 500px;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+    border: 2px solid powderblue;
+}
+
+main > section:first-of-type > p{
+    background-color: #f00;
+    text-decoration: underline;
+}
+
+main > section:nth-of-type(2) >p{
+    background-color: hsl(120, 50%, 50%);
+    text-decoration: overline;
+}
+
+main > section:last-of-type p{
+    background-color: #00f;
+    text-decoration: line-through;
+}

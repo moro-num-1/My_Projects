@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Example: Text Wrapping</title>
+    <style>
+        .float-img {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 0 20px 20px 0;
+            background: #0ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #000;
+        }
+        .wrapper {
+            font-family: Arial, sans-serif;
+            font-size: 1.1em;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="float-img">Floated Box</div>
+        <p>
+            This is an example of how text wraps around a floated element. The turquoise box on the left uses <code>float: left;</code>, so the text flows around it, filling the space to the right and below. This technique is commonly used to wrap text around images or sidebars in web layouts. You can see that the text continues next to the floated box, instead of starting only below it.
+        </p>
+        <p>
+            If you add more text, it will keep wrapping around the floated element until there is no more space, then continue below. This is what is meant by "wrapping" in CSS.
+        </p>
+    </div>
+</body>
+</html>

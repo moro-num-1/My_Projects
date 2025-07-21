@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Data, Links-->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="MORO"/>
+        <meta name="keywords" content="Frog_Game, MORO, HTML, CSS, JS"/>
+        <meta name="description" content="Frog_Game is played like this: 'You guess the square that the Frog is hidden bellow'"/>
+        <link rel="stylesheet" href="frog_game.css"/>
+        <script src="frog_game.js" defer></script>
+
+        <!--Wanna add some styles?
+            Add them in the <style> element!
+        -->
+        <style></style>
+    </head>
+    <!--Page content goes in the <body> element-->
+    <body>
+        <form>
+            <label for="squares_num">What does the number of squares should be?</label>
+            <input
+            id="squares_num" 
+            type="number" 
+            name="squares_num" 
+            oninput="change_squares_num()"
+            value="0"
+            min="0" 
+            max="100"
+            >
+        </form>
+
+        <hr/>
+        <h1>where is the frog?</h1>
+        <div class="container">
+
+        </div>
+        <script>
+            let squares_num = parseInt(document.getElementById('squares_num').value)
+
+        </script>
+    </body>
+</html>

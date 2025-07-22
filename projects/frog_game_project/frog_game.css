@@ -9,8 +9,36 @@ body {
     min-height: 100vh;
 }
 
+form {
+    width: fit-content;
+    margin: auto;
+}
+
+input {
+    text-align: center;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    background-color:#43a52f;
+    color: #09ff40;
+}
+
+label {
+    display: block;
+    font-size: 0px;
+    text-transform: lowercase;
+    font-family: monospace;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid #000
+}
+
 .container {
     display: flex;
-    flex-flow: row wrap;
+    width: 300px;
     margin: auto;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="MORO"/>
+        <meta name="keywords" content="MORO, Test, HTML, CSS"/>
+        <meta name="description" content="I'm playing around with HTML and CSS in this web page."/>
+        <title>Test</title>
+        <link rel="stylesheet" href="test.css"/>
+        <style id="style-element">
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header><span id="c">c</span><span id="s1">s</span><span id="s2">s</span></header>
+            <hr/>
+            <textarea id="style-box" oninput="add_style()">style</textarea>
+        </div>
+        <script>
+            let box = document.getElementById('style-box');
+            let style_element = document.getElementById('style-element');
+
+            function add_style() {
+                style_element.innerHTML = box.value;
+            }
+        </script>
+    </body>
+</html>

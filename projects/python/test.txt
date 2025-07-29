@@ -1,4 +1,0 @@
-bit = 0
-while True:
-    print(bit, end='')
-    bit = 1 - bit

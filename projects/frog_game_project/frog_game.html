@@ -18,18 +18,28 @@
 
     <!--Page content goes in the <body> element-->
     <body>
-
-        <form>
-            <label for="squares_num">Square</label>
+        <form> 
+                <input
+                    type="number"
+                    id="squares-num"
+                    min="0"
+                    max="100"
+                    value="0"
+                    oninput="change_squares_num()"
+                />
+           
+            <!--Still in coding-->
             <input
-            type="number"
-            id="squares_num"
-            min="0"
-            max="100"
-            value="0"
-            />
-        </form>
-        <div class="container" id="squares_container"></div>
+                    type="number"
+                    id="frogs-num"
+                    value="0"
+                    min="0"
+                    max="100"
+                    >
+                    <!-- Still in coding -->
+                    <!-- oninput="change_frogs_num()" -->
+                </form>
+                <div class="container" id="squares-container"></div>
         <!--Scripts File-->
         <script src="frog_game.js"></script>
     </body>

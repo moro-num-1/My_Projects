@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-calc: #113F67;
+    --clr-output: #252629;
+    --clr-nums: #58A0C8;
+    --clr-opr: #34699A;
+}
+
+body {
+    height: 100vh;
+    background-color: #333;
+    display: grid;
+    place-content: center;
+}
+
+.calc {
+    width: 400px;
+    height: 550px;
+    border: 1px solid #000;
+    background-color: var(--clr-calc);
+}
+
+.calc .output {
+    height: 20%;
+    background-color: var(--clr-output);
+}
+
+.calc .controls {
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.calc .controls button{
+    display: grid;
+    place-content: center;
+    font-size: 2em;
+    background-color: var(--clr-nums);
+    border: 3px solid #cbb5b5;
+    border-radius: 25%;
+}
+
+.calc .controls .opr {
+    background-color: var(--clr-opr);
+    grid-column: 4 / 5;
+}
+
+.calc .controls button#zero {
+    grid-column: 2 / 3;
+}
+
+.calc .controls button#on {
+    background-color: #1f7c37;
+    color: #fff;
+}
+
+.calc .controls button#clr {
+    background-color: #000;
+    color: #fff;
+}

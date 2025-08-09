@@ -1,4 +1,4 @@
-body{background-color:#000;color:#fff;}
+body{background-color:#000;color:#fff;height: 100vh;}
 h1{text-align:center;}
 .hsl_width{width:40px}
 #h_span{color:hsl(0, 100%, 50%)}

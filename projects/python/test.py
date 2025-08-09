@@ -1,13 +1,16 @@
-balls = ["white"]
-while True:
-    x = 0
-    your_ball_clr = input("Enter the ball color: ")
-    while x < len(balls):
-        my_ball_clr = balls[x]
-        if (my_ball_clr == your_ball_clr):
-            your_ball_clr = input("I've this one, Enter another color: ")
-            x = 0
-            continue
-        x += 1
-    balls.append(your_ball_clr)
-    print(f"\nAdded to my balls: {balls}\n")
+""" rel = input("Enter the relationship (D, I, J): ").lower()
+y = float(input("\nEnter a value for y: "))
+k = 2
+x = None
+
+if (rel == "d"):
+    x = k * y
+elif (rel == "i"):
+    x = k / y
+elif (rel == "j"):
+    z = float(input("\nEnter a value for z: "))
+    x = k * y * z
+else:
+    print("\nEnter a valid choice!")
+print(f"\nx = {round(x, 1)}") """
+print(2 / 5)

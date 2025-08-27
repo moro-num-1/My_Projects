@@ -1,0 +1,3 @@
+Hello, output.txt
+It's MORO from VS code
+Bye

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: blueviolet;
+    background-color: rgb(138, 43, 226);
+    background-color: #8a2ce2;
+    background-color: hsl(271, 76%, 53%)
+}
+
+div:nth-of-type(2) {
+    background-color: rgba(138, 43, 226, 0.5);
+}
+
+div:nth-of-type(3) {
+    background-color: rgba(138, 43, 226, 0.1)
+}

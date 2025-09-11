@@ -1,0 +1,8 @@
+--------- Notes --------- 
+
+1-Any none-void function must return value except the main() function;
+2-Any Void function musn't return anything;
+3-Local vars go to the memory stack if are not defined;
+4-Local vars are Automatically set to memoriy's previous location;
+5-Global and Static vars go to the memory Static Data;
+6-Global and Static vars are Automatically set to 0;

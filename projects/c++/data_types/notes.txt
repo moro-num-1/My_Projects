@@ -1,0 +1,51 @@
+                                ______ Notes ______
+
+===============
+assignment
+===============
+1-uninitialized integers will default assign to garbage.;
+3-int data type takes 4 bytes memory space.;
+4-functional and assignment initializing crop off the decimal portion causing to lose data but the braces initializing won't and will warm you.;
+5-C++ is capable of reassigning a variable but be careful when using the auto keyword because it might throw a garbage to that variable;
+===============
+integers
+===============
+1-short unsigned int can store 2 bytes and positive numbers 0~(2^16) -1;
+2-short signed int can store 2 bytes and positive or negative numbers (-2^15)~(2^15);
+3-unsigned int can store 4 bytes and positive numbers 0~(2^32) -1;
+4-signed int can store 4 bytes and positive or negative numbers (-2^31)~(2^31);
+5-long unsigned int store 8 bytes and positive numbers 0~(2^64) -1;
+6-long signed int store 8 bytes and positive or negative numbers (-2^63)~(2^63);
+7-"int{}" will be 0 automatically.;
+===============
+floats
+===============
+1-floats in C++ are divided into "float" & "double" & "long double";
+2-float takes 4 bytes  
+3-double takes 8 bytes;
+4-long double takes 16 bytes;
+5-C++ allows float scientific notation;
+6-"0.0 / 0" = nan (Not a Number);
+7-"any positive number / 0" = inf (Infinity);
+8-"any negative number / 0" = -inf (Negative Infinity);
+9-"any positive number / inf" = 0;
+===============
+booleans
+===============
+1-booleans can have two values, true or false;
+2-booleans are used to make decisions;
+3-false value = 0;
+4-true value = 1;
+5-size of a boolean is 1 byte;
+6-boolean is declared in C++ by "bool";
+===============
+characters
+===============
+1-chars occupies 1 byte from memory space;
+2-characters in C++ are declared using "char";
+4-every char has a numeric value in ASCII Code;
+5-this numeric value is stored in memory in binary form;
+===============
+auto
+===============
+1-auto keyword lets the compiler deduce the variable type based on what value we give to it;

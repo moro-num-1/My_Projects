@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue
+}
+
+.parent p {
+    color: green;
+}
+
+.parent .child,
+.title {
+    color: yellow;
+}

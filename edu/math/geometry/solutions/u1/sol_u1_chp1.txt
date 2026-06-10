@@ -1,0 +1,30 @@
+-------------- *** Solutions Unit1 Chapter1 *** --------------
+
+Correct: ✅     |
+Incorrect: ❌   |
+Omitted: ❓     |
+----------------|
+
+1. A,B, and E ✅
+
+2. B,C, and D ✅
+
+3. Point B ✅
+
+4. (BCD),(BDC),(CBD),(CDB),(DBC),(DCB) ✅
+
+5. 6 ✅
+
+6. Line MQ ✅
+
+7. When a line segment has a point between the two end points, this point divide the main line sct(divide) a line segment into two congruent(equal) line segments. ✅ egment into two line segments, if you add their length, you will get the length of the main line segment. ✅
+
+8. GI = GH + HI = 21+36 = 57 ✅
+
+9. JK + KL = JL | 2x+3 + 19 = 32 | 2x+3 = 13 | 2x = 10 | x = 5 ✅
+
+10. NO ≅ NM ✅
+
+11. QS ≅ RT | QR ≅ ST ✅
+
+12. A segment bisector is a (line, line segment, ray, plane) bisect(divide) a line segment into two congruent(equal) line segments. ✅ 

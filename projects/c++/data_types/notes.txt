@@ -3,7 +3,7 @@
 ===============
 assignment
 ===============
-1-uninitialized integers will default assign to garbage.;
+1-uninitialized integers will default be assigned to garbage.;
 3-int data type takes 4 bytes memory space.;
 4-functional and assignment initializing crop off the decimal portion causing to lose data but the braces initializing won't and will warm you.;
 5-C++ is capable of reassigning a variable but be careful when using the auto keyword because it might throw a garbage to that variable;

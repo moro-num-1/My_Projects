@@ -1,0 +1,35 @@
+----------
+Tasks : >>
+----------
+
+------------------
+Complete : ✅    |
+                 |
+Incomplete : ❌  |
+                 |
+Omitted : ❓     |
+------------------
+
+1- Finish the first Arabic lecture. ❌
+
+2- Study the first chimestry lecture. ❌ 
+
+3- Do the homework of the Math. ❌
+
+4- Study 1 hour from the C++ course with applying. ❌
+
+5- Study chapters 3 & 4 from the Geometry book. ❌
+
+6- Relaxing half hour. ❌
+
+7- Study as much as possible about ALU. ❌
+
+8- Study as much as possible from the Algebra book. ❌
+
+9- Study the first lecture of Physics. ❌
+
+10- Do whatever you want if there's enough time. ❌
+
+11- Plan to the next day. ❌
+
+12- Good work!! It's the time to sleep ❌

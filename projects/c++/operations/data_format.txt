@@ -1,0 +1,51 @@
+				______ Notes ______
+=================
+Basic Operators:-
+=================
+1-"+" operation is used to make addition.
+2-"-" operator is used to make subtraction.
+3-"*" operator is used to make multiplication.
+4-"/" operator is used to make division.
+5-"%" operator is used to make modulus.
+=============================
+Precedence & Associativity:-
+=============================
+1-precedence tells us which sign to begin with in an operation.
+2-associativity tells us where to begin the operation(ltr || rtl).
+3-https://en.cppreference.com/w/cpp/language/operator_precedence.html
+======================================
+Prefix/Postfix Increment & Decrement:-
+======================================
+1-"++x" is the same as x = x + 1.
+2-"++x" prefix increment x by 1 directly.
+3-"--x" prefix decrement x by 1 directly.
+4-"x++" postfix increment x by one indirectly.
+5-"x--" postfix decrement x by on indirectly.
+======================
+Compound Assignment:-
+======================
+1-"x += num" is the same as x = x + num.
+2-"x += num" increment x by any number.
+3-"x -= num" decrement x by any number.
+4-"x *= num" multiply x by any number.
+5-"x /= num" divide x by any number.
+6-"x %= num" modulus x by any number.
+=======================
+Relational Operators:-
+=======================
+1-Relational operators always return boolean data type.
+2-"x < y" check if x less that y.
+3-"x > y" check if x greater than y.
+4-"x == y" check if x equivalent to y.
+5-"x <= y" check if x less than or equivalent to y.
+6-"x >= y" check if x greater than y or equivalent to y.
+====================
+Logical Operators:-
+====================
+1-logical operators always return a Boolean data type.
+2-logical operators are mostly used in conditions.
+3-logical operators are "!cnd", "cnd || cnd", "cnd && cnd".
+4-"!cnd" false if cnd is true else false.
+5-"cnd || cnd" true if any condition is true else false.
+6-"cnd && cnd" true if only both conditions are true else false.
+

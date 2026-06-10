@@ -1,0 +1,25 @@
+-------------- *** Solutions Unit1 Chapter2 *** --------------
+Correct: ✅     |
+Incorrect: ❌   |
+Omitted: ❓     |
+----------------|
+
+1. ∠5, ∠3 ✅
+
+2. ∠3 ✅
+
+3. ∠5 ✅
+
+4. ∠2 ✅
+
+5. ∠2 ✅
+
+6. x = 17 ✅
+
+7. m∠B = 73° ✅
+
+8.57° and 33° ✅
+
+9. An angle bisector is a ray that divides an angle into two congruent angles. ✅
+
+10. x = 54, y = 3 ✅

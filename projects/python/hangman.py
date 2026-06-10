@@ -3,23 +3,23 @@ def hang_man(head, left_hand, body, right_hand, left_leg, right_leg):
     print(" +---+")
     print(f" {head}   |")
     print(f"{left_hand}{body}{right_hand}  |")
-    print(f"{left_leg} {right_leg}  |")
-    print("     |")
-    print("=========")
+    
+    
+    
 
-def main():
-    words = [
-    "apple", "banana", "grape", "orange", "peach", "lemon", "melon", "berry", "cherry", "mango",
-    "kiwi", "plum", "apricot", "fig", "pear", "coconut", "olive", "date", "lime", "papaya",
-    "guava", "tomato", "onion", "garlic", "carrot", "potato", "pepper", "broccoli", "cabbage", "spinach",
-    "lettuce", "celery", "beans", "peas", "rice", "bread", "pasta", "pizza", "cheese", "butter",
-    "sugar", "honey", "milk", "cream", "coffee", "tea", "water", "juice", "soda", "cake",
-    "candy", "chocolate", "cookie", "house", "room", "door", "chair", "table", "window", "garden",
-    "street", "school", "class", "teacher", "student", "book", "pencil", "paper", "phone", "clock",
-    "radio", "music", "guitar", "piano", "violin", "drum", "light", "star", "moon", "sun",
-    "earth", "cloud", "rain", "storm", "river", "ocean", "island", "forest", "desert", "mountain",
-    "stone", "fire", "snow", "wind", "train", "plane", "truck", "ship", "horse", "tiger",
-    "zebra", "snake"
+def 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ]
     word = random.choice(words)
     hide_word = ["_" for _ in range(len(word))]

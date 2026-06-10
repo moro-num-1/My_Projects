@@ -1,0 +1,25 @@
+-------------- *** Solutions Unit1 Chapter2 *** --------------
+Correct: ✅     |
+Incorrect: ❌   |
+Omitted: ❓     |
+----------------|
+
+1. ∠1, ∠CID, ∠DIC ✅
+
+2. Acute angle ✅
+
+3. Right angle ✅
+
+4. Straight angle ✅
+
+5. Obtuse angle ✅
+
+6. ∠BAD ✅
+
+7. 9 ✅
+
+8. ∠RTQ ❌ ∠RTS
+
+9. ∠QRT ✅
+
+10. ❓ ∠I ≅ ∠EFG
